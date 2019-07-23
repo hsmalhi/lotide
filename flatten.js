@@ -29,7 +29,8 @@ const flatten = function(arr) {
 };
 
 //Test cases
-
+/*
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
 assertArraysEqual(flatten([[1, 2, 3], 4, [5, 6], 5, [7, 2]]), [1, 2, 3, 4, 5, 6, 5, 7, 2]);
 assertArraysEqual(flatten([1, 2, 3, 4, [5, 6, 7, 8, 9]]), [1, 2, 3, 4, 5, 6, 7, 8, 9]);
+*/
