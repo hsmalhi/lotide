@@ -21,16 +21,17 @@ const flatten = function(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (Array.isArray(arr[i]))
       for (let j = 0; j < arr[i].length; j++)
-        dest[dest.length] = arr[i][j];
+        //dest[dest.length] = arr[i][j];
+        dest.push(arr[i][j]);
     else
-      dest[dest.length] = arr[i];
+      //dest[dest.length] = arr[i];
+      dest.push(arr[i]);
   }
   return dest;
 };
 
 //Test cases
-/*
+
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
 assertArraysEqual(flatten([[1, 2, 3], 4, [5, 6], 5, [7, 2]]), [1, 2, 3, 4, 5, 6, 5, 7, 2]);
 assertArraysEqual(flatten([1, 2, 3, 4, [5, 6, 7, 8, 9]]), [1, 2, 3, 4, 5, 6, 7, 8, 9]);
-*/
