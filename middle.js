@@ -1,4 +1,4 @@
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length)
     return false;
   for (let i = 0; i < arr1.length; i++) {
@@ -8,26 +8,26 @@ const eqArrays = function (arr1, arr2) {
   return true;
 };
 
-const assertArraysEqual = function (actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected))
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   else
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
 };
 
-const middle = function (arr) {
+const middle = function(arr) {
   let midArr = [];
   if (arr.length <= 2)
     return midArr;
   let mid = arr.length / 2;
   if ((mid % 1) !== 0)
-    midArr[0] = arr[Math.floor(mid)]
+    midArr[0] = arr[Math.floor(mid)];
   else {
     midArr[0] = arr[mid - 1];
     midArr[1] = arr[mid];
   }
   return midArr;
-}
+};
 
 /*
 assertArraysEqual(middle([1]), []); // => []
