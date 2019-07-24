@@ -23,9 +23,14 @@ const eqObjects = function(object1, object2) {
   return false
 };
 
+//Helper function which returns true if all the key value pairs in the left object exist in the right object.
 const eqObjectsLeftInsideRight = function(leftObject, rightObject){
   for(key in leftObject){
-    if (leftObject[key] !== rightObject[key])
+    if (Array.isArray(leftObject[key])){
+      if (!(eqArrays(leftObject[key], rightObject[key])))
+        return false
+    }
+    else if (leftObject[key] !== rightObject[key])
       return false
   }
   return true;
