@@ -18,22 +18,18 @@ const eqArrays = function(arr1, arr2) {
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
 const eqObjects = function(object1, object2) {
-  if (eqObjectsLeftInsideRight(object1, object2))
-    return eqObjectsLeftInsideRight(object2, object1)
-  return false
-};
-
-//Helper function which returns true if all the key value pairs in the left object exist in the right object.
-const eqObjectsLeftInsideRight = function(leftObject, rightObject){
-  for(key in leftObject){
-    if (Array.isArray(leftObject[key])){
-      if (!(eqArrays(leftObject[key], rightObject[key])))
+  if (Object.keys(object1).length === Object.keys(object2).length){
+    for(key in object1){
+      if (Array.isArray(object1[key])){
+        if (!(eqArrays(object1[key], object2[key])))
+          return false
+      }
+      else if (object1[key] !== object2[key])
         return false
     }
-    else if (leftObject[key] !== rightObject[key])
-      return false
+    return true;
   }
-  return true;
+  return false
 };
 
 //Test cases
