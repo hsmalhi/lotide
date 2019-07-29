@@ -1,19 +1,19 @@
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length)
-    return false;
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i])
-      return false;
-  }
-  return true;
-};
+// const eqArrays = function(arr1, arr2) {
+//   if (arr1.length !== arr2.length)
+//     return false;
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i])
+//       return false;
+//   }
+//   return true;
+// };
 
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected))
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  else
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-};
+// const assertArraysEqual = function(actual, expected) {
+//   if (eqArrays(actual, expected))
+//     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+//   else
+//     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+// };
 
 //Function takeUntil which will keep collecting items from a provided array until the callback provided returns a truthy value.
 const takeUntil = function(array, callback) {
@@ -26,6 +26,8 @@ const takeUntil = function(array, callback) {
   }
   return result;
 };
+
+module.exports = takeUntil;
 
 //Test code
 // const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];

@@ -1,8 +1,8 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected)
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  else console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-};
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected)
+//     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+//   else console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+// };
 
 // str: the string that we need to look through
 const countLetters = function(str) {
@@ -18,6 +18,8 @@ const countLetters = function(str) {
 
   return results;
 };
+
+module.exports = countLetters;
 
 /*
 //Test code

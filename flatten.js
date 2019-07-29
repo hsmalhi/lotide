@@ -1,19 +1,19 @@
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length)
-    return false;
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i])
-      return false;
-  }
-  return true;
-};
+// const eqArrays = function(arr1, arr2) {
+//   if (arr1.length !== arr2.length)
+//     return false;
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i])
+//       return false;
+//   }
+//   return true;
+// };
 
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected))
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  else
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-};
+// const assertArraysEqual = function(actual, expected) {
+//   if (eqArrays(actual, expected))
+//     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+//   else
+//     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+// };
 
 //flatten: A function which will take in an array of arrays and return a "flattened" version of the array.
 const flatten = function(arr) {
@@ -27,6 +27,8 @@ const flatten = function(arr) {
   }
   return dest;
 };
+
+module.exports = flatten;
 
 //Test cases
 /*
