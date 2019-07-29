@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 //Returns all of the array except for the head
 const tail = function(arr) {
   if (arr.length < 2)
