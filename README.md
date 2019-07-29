@@ -12,11 +12,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install @hsmalhi/lotide`
+`npm install @hsmalhi94/lotide`
 
 **Require it:**
 
-`const _ = require('@hsmalhi/lotide');`
+`const _ = require('@hsmalhi94/lotide');`
 
 **Call it:**
 
@@ -41,5 +41,5 @@ The following functions are currently implemented:
 * `tail(...)`: returns the tail of an array
 * `letterPositions(...)`:  an object where the keys are the letters in a string and the values are the indexes at which those letters appear 
 * `map(...)`: based on the callback function provided, performs the function on each element of an array and returns a new array
-* `takeUntil(...)`: returns 
-* `without(...)`: description
+* `takeUntil(...)`: returns all items from a provided array until the callback provided returns a truthy value
+* `without(...)`: returns an array without the items that were specified in the itemsToRemove parameter
