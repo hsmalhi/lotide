@@ -39,7 +39,7 @@ The following functions are currently implemented:
 * `head(arr)`: returns the head of an array (first element)
 * `middle(arr)`: returns the middle of an array (one or two elements)
 * `tail(arr)`: returns the tail of an array
-* `letterPositions(sentence)`:  an object where the keys are the letters in a string and the values are the indexes at which those letters appear 
+* `letterPositions(sentence)`:  returns an object where the keys are the letters in a string and the values are the indexes at which those letters appear 
 * `map(array, callback)`: based on the callback function provided, performs the function on each element of an array and returns a new array
 * `takeUntil(array, callback)`: returns all items from a provided array until the callback provided returns a truthy value
 * `without(source, itemsToRemove)`: returns an array without the items that were specified in the itemsToRemove parameter
